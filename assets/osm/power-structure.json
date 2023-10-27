@@ -1,0 +1,178 @@
+[
+    {
+        "tag": "cable",
+        "description": "An insulated cable carrying electrical power, such as transmission or distribution cables located\n\t\t\t\tunderground and undersea cables",
+        "type": [
+            "way"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Power_to_the_People_-_geograph.org.uk_-_560240.jpg/1080px-Power_to_the_People_-_geograph.org.uk_-_560240.jpg"
+    },
+    {
+        "tag": "catenary_mast",
+        "description": "A pole supporting the overhead wires used to supply electricity to vehicles equipped with a pantograph\n\t\t\t\tsuch as trams and trains",
+        "type": [
+            "node"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stahl-Oberleitungsmast_Deutsche_Bahn.jpg/1080px-Stahl-Oberleitungsmast_Deutsche_Bahn.jpg"
+    },
+    {
+        "tag": "compensator",
+        "description": "A static power device used to ensure power quality and electrical network resilience.",
+        "type": [
+            "node",
+            "area"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/NoxonReactor.jpg/1080px-NoxonReactor.jpg"
+    },
+    {
+        "tag": "connection",
+        "description": "A free-standing electrical connection between two or more overhead wires",
+        "type": [
+            "node"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/D%C3%BClmen%2C_Umspannstation_--_2014_--_0005.jpg/1080px-D%C3%BClmen%2C_Umspannstation_--_2014_--_0005.jpg"
+    },
+    {
+        "tag": "converter",
+        "description": "A device to convert power between alternating and direct current electrical power: often, but not only,\n\t\t\t\tover high voltage networks",
+        "type": [
+            "node",
+            "area"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Pole_2_Thyristor_Valve.jpg/1080px-Pole_2_Thyristor_Valve.jpg"
+    },
+    {
+        "tag": "generator",
+        "description": "A device which converts one form of energy to another, for example, an electrical generator.",
+        "type": [
+            "node",
+            "way",
+            "area"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Eoliennes_Gaspesie.jpg/1080px-Eoliennes_Gaspesie.jpg"
+    },
+    {
+        "tag": "heliostat",
+        "description": "A mirror of a heliostat device",
+        "type": [
+            "node"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Heliostat.jpg/1080px-Heliostat.jpg"
+    },
+    {
+        "tag": "insulator",
+        "description": "An electrical insulator which connects a power line to a support structure and prevents grounding.",
+        "type": [
+            "node",
+            "way"
+        ],
+        "image": "https://wiki.openstreetmap.org/w/images/thumb/4/48/Power_insulator.png/1080px-Power_insulator.png"
+    },
+    {
+        "tag": "line",
+        "description": "High-voltage power lines used for power transmission, usually supported by towers or pylons",
+        "type": [
+            "way"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Freileitung-Biblis.jpg/1080px-Freileitung-Biblis.jpg"
+    },
+    {
+        "tag": "busbar",
+        "description": "Identifies a power line as a busbar, the central connection in a substation",
+        "type": [
+            "way"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/110kV-Sammelschienen.jpg/1080px-110kV-Sammelschienen.jpg"
+    },
+    {
+        "tag": "bay",
+        "description": "A power line within a substation which connects a circuit to a busbar.",
+        "type": [
+            "way"
+        ],
+        "image": null
+    },
+    {
+        "tag": "minor_line",
+        "description": "Minor power lines forming the distribution grid, usually carried by poles.",
+        "type": [
+            "way"
+        ],
+        "image": "https://wiki.openstreetmap.org/w/images/thumb/a/a5/Minor.jpg/1080px-Minor.jpg"
+    },
+    {
+        "tag": "plant",
+        "description": "An industrial facility where power (electricity, useful heat, biogas) is produced by individual power\n\t\t\t\tgenerator units.",
+        "type": [
+            "area",
+            "relation"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Three_mile_island_062010.jpg/1080px-Three_mile_island_062010.jpg"
+    },
+    {
+        "tag": "pole",
+        "description": "A single pole supporting power lines, often a wood, steel, or concrete mast designed to carry minor\n\t\t\t\tpower lines.",
+        "type": [
+            "node"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/07335jfPuregold_Estero_Maypajo_Market_J._P._Rizal_Mabini_Streets_Casili_Bridge_Caloocan_Cityfvf_26.jpg/1080px-07335jfPuregold_Estero_Maypajo_Market_J._P._Rizal_Mabini_Streets_Casili_Bridge_Caloocan_Cityfvf_26.jpg"
+    },
+    {
+        "tag": "portal",
+        "description": "A supporting structure for power lines, composed of vertical legs with cables between them attached to a\n\t\t\t\thorizontal crossarm.",
+        "type": [
+            "node",
+            "way"
+        ],
+        "image": "https://wiki.openstreetmap.org/w/images/thumb/7/7c/Power_substation_portal.jpg/1080px-Power_substation_portal.jpg"
+    },
+    {
+        "tag": "substation",
+        "description": "A facility which controls the flow of electricity in a power network with transformers, switchgear or\n\t\t\t\tcompensators.",
+        "type": [
+            "node",
+            "area"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Legacy_National_Grid_Substation_-_geograph.org.uk_-_39134.jpg/1080px-Legacy_National_Grid_Substation_-_geograph.org.uk_-_39134.jpg"
+    },
+    {
+        "tag": "switch",
+        "description": "A device which allows electrical network operators to power up & down lines and transformers in\n\t\t\t\tsubstations or along the power grid.",
+        "type": [
+            "node"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Hochspannungsschalter.JPG/1080px-Hochspannungsschalter.JPG"
+    },
+    {
+        "tag": "switchgear",
+        "description": "A switchgear, which comprises one or more busbar assemblies and a number of bays each connecting a\n\t\t\t\tcircuit to the busbar assembly.",
+        "type": [
+            "area"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kernkraftwerk_Grafenrheinfeld_14.jpg/1080px-Kernkraftwerk_Grafenrheinfeld_14.jpg"
+    },
+    {
+        "tag": "terminal",
+        "description": "A point of connection where an overhead power line ends on a building or wall; for example, when\n\t\t\t\tconnecting it to an indoor substation.",
+        "type": [
+            "node"
+        ],
+        "image": "https://wiki.openstreetmap.org/w/images/thumb/a/a6/Trafohaus.jpg/1080px-Trafohaus.jpg"
+    },
+    {
+        "tag": "tower",
+        "description": "A tower or pylon carrying high voltage electricity cables. Often constructed from steel latticework but\n\t\t\t\ttubular or solid pylons are also used.",
+        "type": [
+            "node"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Electricity_pylon_DSCI0402.jpg/1080px-Electricity_pylon_DSCI0402.jpg"
+    },
+    {
+        "tag": "transformer",
+        "description": "A device for stepping up or down electric voltage. Large power transformers are typically located inside\n\t\t\t\tsubstations",
+        "type": [
+            "node"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Trafostation_Alter_Hellweg_IMGP4722.jpg/1080px-Trafostation_Alter_Hellweg_IMGP4722.jpg"
+    }
+]
