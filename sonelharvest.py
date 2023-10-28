@@ -9,7 +9,7 @@ def main():
     country = input("Country code: (Default: DZ) ")
     target = input("Target: (Deafult: power) ")
     tags = input("Query Tags: (exp: tower, generator, line) ")
-    export_type = input(f"Export type:\n1. GeoJSON\n2. CSV\n3. KML\n(Default: 1) ")
+    export_type = input("Export type:\n1. GeoJSON\n2. CSV\n3. KML\n(Default: 1) ")
     if not country:
         country: str = "DZ"
     if not target:
