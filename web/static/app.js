@@ -4,8 +4,8 @@ let country = "", target = "", tags = []
 form.addEventListener("submit", () => {
     const input = document.getElementsByTagName("input")
     const export_type = document.getElementsByTagName("select")[0].value
-    country = input[0].value ?? "DZ"
-    target = input[1].value ?? "power"
+    country = input[0].value === "" ? "DZ" : input[0].value
+    target = input[1].value === "" ? "power" : input[1].value
     tags = input[2].value.replaceAll(" ", "").split(",")
     if (tags[0] === '')
         return document.getElementById('res').textContent = "Please enter the tags to query"
@@ -26,14 +26,25 @@ function sendForm(country, target, tags) {
             "content-type": "application/json"
         }
     }).then((res) => {
-        const restext = document.getElementById('res')
         const textarea = document.getElementsByTagName("textarea")[0]
+        const dwnld = document.getElementById('dwnld')
         if (res.status !== 200) return res.json().then((j) => restext.textContent = j.error)
 
         res.json().then((j) => {
-            restext.textContent = "Done."
             textarea.textContent = JSON.stringify(j, null, 3);
+            dwnld.removeAttribute("hidden")
+            dwnld.addEventListener("click", () => {
+                const blob = new Blob([JSON.stringify(j, null, 3)], { type: "application/json" })
+                const url = URL.createObjectURL(blob)
+                const a = document.createElement("a")
+                a.href = url
+
+                console.log("country", country, "target", target)
+                a.download = `${country}_${target}_${tags.join("_")}.json`
+                a.click()
+            })
         })
+        console.log(country, target)
     }).catch(e => {
         console.log("err", e)
     })

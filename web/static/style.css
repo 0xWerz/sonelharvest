@@ -44,6 +44,10 @@ textarea {
   width: 100% !important;
 }
 
+#dwnld {
+  width: 25%;
+}
+
 span {
   margin-bottom: 4px;
 }
