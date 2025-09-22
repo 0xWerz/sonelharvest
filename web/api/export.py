@@ -3,15 +3,16 @@ import json
 import sys
 import os
 
-# Add the project root to the Python path to import modules
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
+# Add the web directory to the Python path to import local modules
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 try:
     from scripts.geojson import geojson
-except ImportError:
+except ImportError as e:
+    print(f"Import error: {e}")
     # Fallback if import fails
     def geojson(country, target, tags):
-        return {"error": "geojson module not available"}
+        return {"error": f"geojson module not available: {e}"}
 
 class handler(BaseHTTPRequestHandler):
 
